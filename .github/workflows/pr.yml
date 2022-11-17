@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create pull request
-      run: gh pr create -B main -H develop --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
+      run: gh pr create -B main -H develop --title 'Merge branch_to_merge into base_branch' --body 'Created by Github'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
