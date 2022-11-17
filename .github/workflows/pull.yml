@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - feature-1
+    - main
 
 jobs:
   pull-request:
@@ -11,4 +11,4 @@ jobs:
     - name: pull-request
       uses: repo-sync/pull-request@v2
       with:
-        destination_branch: "main"
+        destination_branch: "develop"
